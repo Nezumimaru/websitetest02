@@ -12,6 +12,7 @@
     :root {
       --ink: #16211f;
       --card: #1e2b29;
+      --slate: #4f6067;   /* 数字カード・お問い合わせの背景 */
       --accent: #2ab5a5;
       --laccent: #3fd0be;
       --label: #f08300;
@@ -121,10 +122,10 @@
     .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
     .about-text p { font-size: .95rem; line-height: 2.1; color: var(--steel); }
     .about-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-    .stat-card { background: var(--card); color: var(--white); padding: 1.5rem 1.2rem; }
+    .stat-card { background: var(--slate); color: var(--white); padding: 1.5rem 1.2rem; }
     .stat-num { font-size: 2.2rem; font-weight: 900; color: var(--laccent); line-height: 1; }
     .stat-unit { font-size: .8rem; color: var(--laccent); }
-    .stat-label { font-size: .75rem; color: rgba(255,255,255,.55); margin-top: .4rem; letter-spacing: .05em; }
+    .stat-label { font-size: .75rem; color: rgba(255,255,255,.72); margin-top: .4rem; letter-spacing: .05em; }
 
     .service { background: var(--white); }
     .service-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
@@ -156,16 +157,16 @@
     .company-table th { width: 160px; padding: 1rem 1.2rem 1rem 0; font-weight: 700; color: var(--ink); text-align: left; vertical-align: top; white-space: nowrap; }
     .company-table td { padding: 1rem 0; color: var(--steel); line-height: 1.85; }
 
-    .contact { background: var(--card); color: var(--white); }
-    .contact .sec-label { color: var(--label); }
+    .contact { background: var(--slate); color: var(--white); }
+    .contact .sec-label { color: #ffd9a8; }
     .contact .sec-title { color: var(--white); border-bottom-color: var(--accent); }
     .contact-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
-    .contact-left p { color: rgba(255,255,255,.68); font-size: .95rem; margin-bottom: 2rem; line-height: 1.9; }
+    .contact-left p { color: rgba(255,255,255,.85); font-size: .95rem; margin-bottom: 2rem; line-height: 1.9; }
     .contact-info-item { margin-bottom: 1.4rem; }
-    .contact-info-item .label { font-size: .72rem; letter-spacing: .15em; color: var(--label); text-transform: uppercase; margin-bottom: .3rem; font-weight: 700; }
+    .contact-info-item .label { font-size: .72rem; letter-spacing: .15em; color: #ffd9a8; text-transform: uppercase; margin-bottom: .3rem; font-weight: 700; }
     .contact-info-item .val { font-size: 1.15rem; font-weight: 700; color: var(--white); }
-    .contact-info-item .val a { color: var(--laccent); text-decoration: none; }
-    .contact-form label { display: block; font-size: .8rem; color: rgba(255,255,255,.75); margin-bottom: .35rem; letter-spacing: .05em; }
+    .contact-info-item .val a { color: #7ce8da; text-decoration: none; }
+    .contact-form label { display: block; font-size: .8rem; color: rgba(255,255,255,.88); margin-bottom: .35rem; letter-spacing: .05em; }
     .contact-form input, .contact-form textarea {
       width: 100%;
       background: rgba(255,255,255,.08);
@@ -179,7 +180,8 @@
     }
     .contact-form input:focus, .contact-form textarea:focus { outline: 2px solid var(--accent); border-color: transparent; }
     .contact-form textarea { min-height: 120px; resize: vertical; }
-    .form-note { font-size: .78rem; color: rgba(255,255,255,.5); margin-top: .8rem; line-height: 1.7; }
+    .contact-form ::placeholder { color: rgba(255,255,255,.6); }
+    .form-note { font-size: .78rem; color: rgba(255,255,255,.72); margin-top: .8rem; line-height: 1.7; }
 
     footer { background: #101816; color: rgba(255,255,255,.4); text-align: center; padding: 1.8rem; font-size: .78rem; letter-spacing: .05em; }
 
@@ -315,8 +317,8 @@
         <tr><th>勤務地</th><td>栃木県宇都宮市城南3丁目2番21号（JR雀宮駅から車10分）</td></tr>
         <tr><th>勤務時間</th><td>8:30〜17:15（休憩90分）</td></tr>
         <tr><th>休日</th><td>日曜・祝日・その他（年間休日101日／会社カレンダーによる）</td></tr>
-        <tr><th>待遇</th><td>賞与 年2回（業績により変動あり）／通勤手当／資格手当等あり／未経験大歓迎</td></tr>
-        <tr><th>必要な免許</th><td>普通自動車運転免許（AT限定不可）</td></tr>
+        <tr><th>待遇</th><td>昇給あり／賞与 年2回（業績により変動あり）／通勤手当／資格手当等あり／各種社会保険完備（労災・健康・厚生）／未経験大歓迎</td></tr>
+        <tr><th>必要な免許</th><td>普通自動車運転免許</td></tr>
         <tr><th>必要なスキル</th><td>Word・Excel等の基本操作／現場管理経験あれば尚可</td></tr>
         <tr><th>試用期間</th><td>あり（3ヶ月／同条件）</td></tr>
       </table>
